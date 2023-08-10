@@ -1,6 +1,6 @@
 import { r as reactExports } from './__federation_shared_react.js';
 import { importShared } from './__federation_fn_import.js';
-import useStore from './__federation_expose_Store-ae8e858d.js';
+import useStore from './__federation_expose_Store-a4096e46.js';
 
 var jsxRuntime = {exports: {}};
 

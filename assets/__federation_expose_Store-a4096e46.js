@@ -318,7 +318,7 @@ const newImpl = (config, baseOptions) => (set, get, api) => {
 };
 const persistImpl = (config, baseOptions) => {
   if ("getStorage" in baseOptions || "serialize" in baseOptions || "deserialize" in baseOptions) {
-    if (({"BASE_URL":"/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production") {
+    if (({"BASE_URL":"/cart-mfe/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production") {
       console.warn(
         "[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead."
       );

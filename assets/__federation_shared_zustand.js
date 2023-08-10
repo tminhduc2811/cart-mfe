@@ -18,7 +18,7 @@ const createStoreImpl = (createState) => {
     return () => listeners.delete(listener);
   };
   const destroy = () => {
-    if (({"BASE_URL":"/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production") {
+    if (({"BASE_URL":"/cart-mfe/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production") {
       console.warn(
         "[DEPRECATED] The `destroy` method will be unsupported in a future version. Instead use unsubscribe function returned by subscribe. Everything will be garbage-collected if store is garbage-collected."
       );
@@ -82,7 +82,7 @@ const {useDebugValue} = await importShared('react');
 const { useSyncExternalStoreWithSelector } = useSyncExternalStoreExports;
 let didWarnAboutEqualityFn = false;
 function useStore(api, selector = api.getState, equalityFn) {
-  if (({"BASE_URL":"/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production" && equalityFn && !didWarnAboutEqualityFn) {
+  if (({"BASE_URL":"/cart-mfe/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production" && equalityFn && !didWarnAboutEqualityFn) {
     console.warn(
       "[DEPRECATED] Use `createWithEqualityFn` instead of `create` or use `useStoreWithEqualityFn` instead of `useStore`. They can be imported from 'zustand/traditional'. https://github.com/pmndrs/zustand/discussions/1937"
     );
@@ -99,7 +99,7 @@ function useStore(api, selector = api.getState, equalityFn) {
   return slice;
 }
 const createImpl = (createState) => {
-  if (({"BASE_URL":"/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production" && typeof createState !== "function") {
+  if (({"BASE_URL":"/cart-mfe/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production" && typeof createState !== "function") {
     console.warn(
       "[DEPRECATED] Passing a vanilla store will be unsupported in a future version. Instead use `import { useStore } from 'zustand'`."
     );
@@ -111,7 +111,7 @@ const createImpl = (createState) => {
 };
 const create = (createState) => createState ? createImpl(createState) : createImpl;
 var react = (createState) => {
-  if (({"BASE_URL":"/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production") {
+  if (({"BASE_URL":"/cart-mfe/","MODE":"production","DEV":false,"PROD":true,"SSR":false} ? "production" : void 0) !== "production") {
     console.warn(
       "[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`."
     );
