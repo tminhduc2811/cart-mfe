@@ -28,4 +28,5 @@ export default defineConfig({
   preview: {
     port: 3002,
   },
+  base: "/cart-mfe/",
 });
